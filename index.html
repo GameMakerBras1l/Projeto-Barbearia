@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia - Página Inicial</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #d4a44c;
+        }
+
+        .banner {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .sobre {
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .beneficios {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .beneficios ul {
+            line-height: 2.5;
+            font-size: 18px;
+        }
+
+        .beneficios img {
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .beneficios {
+                flex-direction: column;
+            }
+
+            .beneficios img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Barbearia Estilo & Tradição</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="login.html">Sair</a>
+        </nav>
+    </header>
+
+    <img
+        class="banner"
+        src="imagens/banner.jpg"
+        alt="Interior de uma barbearia"
+    >
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre a Barbearia</h2>
+
+            <div class="sobre">
+                <p>
+                    Localizada no coração da cidade,
+                    a Barbearia Estilo & Tradição oferece
+                    serviços de qualidade para nossos clientes.
+                </p>
+
+                <p>
+                    Nossa missão é proporcionar uma experiência
+                    única, combinando tradição, conforto e
+                    atendimento profissional.
+                </p>
+
+                <p>
+                    Trabalhamos com dedicação para garantir
+                    a satisfação de todos os nossos clientes.
+                </p>
+            </div>
+        </section>
+
+        <section id="beneficios">
+            <h2>Benefícios</h2>
+
+            <div class="beneficios">
+                <ul>
+                    <li>Atendimento personalizado</li>
+                    <li>Profissionais experientes</li>
+                    <li>Ambiente confortável</li>
+                    <li>Produtos de qualidade</li>
+                    <li>Horários flexíveis</li>
+                </ul>
+
+                <img
+                    src="imagens/beneficios.jpg"
+                    alt="Cliente sendo atendido na barbearia"
+                >
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Barbearia Estilo & Tradição
+        </p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
